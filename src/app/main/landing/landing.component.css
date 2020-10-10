@@ -1,0 +1,22 @@
+msg h1{
+    color:#234029;
+    text-align: center;
+}
+
+msg h4{
+
+}
+
+.nav-sticky{
+    position: fixed;
+    top: 2%; left: 4%;
+    background-color:#da583a;
+    border-radius: 16px;
+  }
+
+/* 
+#234029
+#32593c
+#8d2d1d
+#da583a
+#260d0d */

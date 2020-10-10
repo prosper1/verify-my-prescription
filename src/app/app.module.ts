@@ -8,6 +8,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LandingComponent } from './main/landing/landing.component';
 import { PrescriptionComponent } from './main/prescription/prescription.component';
 import { TrackComponent } from './main/track/track.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { LoginComponent } from './auth/login/login.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { TrackComponent } from './main/track/track.component';
     FooterComponent,
     LandingComponent,
     PrescriptionComponent,
-    TrackComponent
+    TrackComponent,
+    RegisterComponent,
+    LoginComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
