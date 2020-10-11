@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./momo.component.css']
 })
 export class MomoComponent implements OnInit {
-
+  uID = '';
   constructor() { }
 
   ngOnInit(): void {
+    this.uID = localStorage.getItem('uID');
   }
 
 }

@@ -36,6 +36,7 @@ export class LandingComponent implements OnInit {
     this.rest.myUId().subscribe(
       data => {
         this.uID = data[0].u_Id;
+        localStorage.setItem('uID', this.uID);
       });
   }
 
