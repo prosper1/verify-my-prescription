@@ -10,15 +10,10 @@
 
 }
 
+.msg span {
+    color:yellow;
+}
+
 .msg h2{
     color: #8d2d1d;
 }
-
-
-
-/* 
-#234029
-#32593c
-#8d2d1d
-#da583a
-#260d0d */

@@ -6,34 +6,21 @@
     </div>
     <div>
         <div class="list-group">
-            <li class="list-group-item">
+            <li *ngFor="let item of itemList" class="list-group-item">
               <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">1 x Bronclear Cough</h5>
-                <small>100ml</small>
+                <h5 class="mb-1">1 x {{item.name}}</h5>
+                <small>{{item.size}}</small>
               </div>
               <p class="mb-1">Helps with fever and othe dhdhdhdhdhd</p>
               
               <div class="d-flex w-100 justify-content-between">
                 
                 <small>Take 2, 3 times a day for adults.</small>
-                <h5 class="mb-1">R49</h5>
+                <h5 class="mb-1">R{{item.price}}</h5>
                 
               </div>
             </li>
-            <li class="list-group-item">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">1 x Bronclear Cough</h5>
-                      <small>100ml</small>
-                    </div>
-                    <p class="mb-1">Helps with fever and othe dhdhdhdhdhd</p>
-                    
-                    <div class="d-flex w-100 justify-content-between">
-                      
-                      <small>Take 2, 3 times a day for adults.</small>
-                      <h5 class="mb-1">R49</h5>
-                      
-                    </div>
-            </li>
+            
             <li class="list-group-item">
                     <div class="d-flex w-100 justify-content-between">
                       <h5 class="mb-1">SERVICE FEE</h5>
@@ -44,14 +31,14 @@
             <li class="list-group-item">
                     <div class="d-flex w-100 justify-content-between">
                       <h4 class="mb-1">TOTAL</h4>
-                      <h5 class="mb-1">R49</h5>
+                      <h5 class="mb-1">{{total}}</h5>
                     </div>
             
                   </li>
             <li class="list-group-item">
                 
             </li>
-            <button class="btn btn-action btn-lg">Check Out</button>
+            <button (click)="pay()" class="btn btn-action btn-lg">Check Out</button>
             <a>check prices</a>
           </div>
     </div>
